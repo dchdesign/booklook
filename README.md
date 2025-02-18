@@ -8,7 +8,7 @@ The BookLook application accesses the Volume IDs:
 Volume IDs - Unique strings given to each volume that Google Books knows about. An example of a volume ID is _LettPDhwR0C. 
 You can use the API to get the volume ID by making a request that returns a Volume resource; you can find the volume ID in its id field.
 
-I perform a volumes search by sending an HTTP GET request to the following URI:
+I perform a volumes search by sending an HTTP GET request to the following URL:
 https://www.googleapis.com/books/v1/volumes?q=search+terms
 
 MVP CORE FEATURES LIST:
