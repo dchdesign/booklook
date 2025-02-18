@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" type="text/css" href="./styles.css" /> 
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script defer src="./script.js"></script>
+
+<title>BookLook</title>
+
+<body>
+
+  <header>
+    <h1>BookLook</h1>
+  </header>
+
+    <div class="search-container">
+
+      <form>
+
+        <label for="search-text">
+          <input type="text" name="search-text" id="search-text" placeholder="TYPE HERE">
+        </label>
+
+        <label for="search-options">
+          <select id="options">
+            <option value="title">TITLE</option>
+            <option value="author">AUTHOR</option>
+            <option value="isbn">ISBN</option>
+          </select>
+        </label>
+
+        <button type="submit" id="submitSearch" class="button">LOOK FOR BOOK</button>
+
+      </form>
+
+    </div>
+
+  <section id="results">
+    
+  </section>
+
+</body>
+
+</html>
