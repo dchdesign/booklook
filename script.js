@@ -4,7 +4,7 @@ let resultsContainer = document.querySelector('#results')
 //title search with API KEY I got from Google
 async function getBookDataByTitle(text) {
   try {
-    const url = `https://www.googleapis.com/books/v1/volumes?q=intitle:${text}&maxResults=40&key=AIzaSyAfBBp5mHgcJfee18mFgemPf1DfY5McMa8`;
+    const url = `https://www.googleapis.com/books/v1/volumes?q=intitle:${text}&maxResults=40&key=zaSyAfBBp5mHgcJfee18mFgemPf1DfY5McMa8`;
     const response = await axios.get(url)
     let data = response.data.items
     bookData(data)
@@ -18,7 +18,7 @@ async function getBookDataByTitle(text) {
 //author search with API KEY I got from Google
 async function getBookDataByAuthor(text) {
   try {
-    const url = `https://www.googleapis.com/books/v1/volumes?q=inauthor:${text}&maxResults=40&key=AIzaSyAfBBp5mHgcJfee18mFgemPf1DfY5McMa8`;
+    const url = `https://www.googleapis.com/books/v1/volumes?q=inauthor:${text}&maxResults=40&key=zaSyAfBBp5mHgcJfee18mFgemPf1DfY5McMa8`;
     const response = await axios.get(url)
     let data = response.data.items
     bookData(data)
@@ -32,7 +32,7 @@ async function getBookDataByAuthor(text) {
 //ISBN search with API KEY I got from Google
 async function getBookDataByISBN(text) {
   try {
-    const url = `https://www.googleapis.com/books/v1/volumes?q=isbn:${text}&maxResults=40&key=AIzaSyAfBBp5mHgcJfee18mFgemPf1DfY5McMa8`;
+    const url = `https://www.googleapis.com/books/v1/volumes?q=isbn:${text}&maxResults=40&key=zaSyAfBBp5mHgcJfee18mFgemPf1DfY5McMa8`;
     const response = await axios.get(url)
     let data = response.data.items
     bookData(data)
