@@ -1,5 +1,6 @@
 The BookLook web application will enable a user to enter a title, author, or ISBN into the main search field, 
-and then receive a list of book cover images on the results page, which they can click on to get more information about that book. 
+and then receive a list of book cover images and more information about that book in a results section. 
+
 The API that I am using to run this application is the Google Books API: https://developers.google.com/books/docs/overview
 
 The BookLook application accesses the Volume IDs: 
