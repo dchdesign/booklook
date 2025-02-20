@@ -147,7 +147,7 @@ function addBookDisplayListeners() {
   let bookDisplayArray = Array.from(bookDisplayButton).entries()
   for (let [button] of bookDisplayArray) {
     function show() {
-      bookDisplayView.forEach(modal => modal.style.display = "none") 
+      bookDisplayView.forEach(book => book.style.display = "none") 
     }
     button.addEventListener("click", show)
   }
