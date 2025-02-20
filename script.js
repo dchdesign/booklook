@@ -164,16 +164,16 @@ function addBookDisplayListeners() {
   let searchText = document.querySelector('#search-text').value
 
   //drop down menu options
-  let searchType = document.getElementById('options') 
+  let searchOptions = document.getElementById('options') 
 
   //remove results from previous search
   removeResults(resultsContainer)
 
   //if statement for search options
-  if (searchType.options[searchType.selectedIndex].text == "author") {
+  if (searchOptions.options[searchOptions.selectedIndex].text == "author") {
     getBookInfoByAuthor(searchText)
   }
-  else if (searchType.options[searchType.selectedIndex].text == "isbn") {
+  else if (searchOptions.options[searchOptions.selectedIndex].text == "isbn") {
     getBookInfoByISBN(searchText)
   }else getBookInfoByTitle(searchText)
 })
