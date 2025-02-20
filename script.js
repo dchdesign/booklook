@@ -172,11 +172,12 @@ function addBookDisplayListeners() {
 
   //if statement for search options
   if (searchOptions.options[searchOptions.selectedIndex].text == "author") {
-    getBookInfoByAuthor(searchText)
+       getBookInfoByAuthor(searchText)
   }
   else if (searchOptions.options[searchOptions.selectedIndex].text == "isbn") {
-    getBookInfoByISBN(searchText)
-  }else getBookInfoByTitle(searchText)
+       getBookInfoByISBN(searchText)
+  }
+  else getBookInfoByTitle(searchText)
 })
 
 
