@@ -80,7 +80,7 @@ function bookInfo(bookInfo) {
         isbn = book.volumeInfo.industryIdentifiers[0].identifier
       }
     } else {
-      isbn = "N/A";
+        isbn = "N/A";
     }
 
     //Google Books preview 
