@@ -60,7 +60,7 @@ function bookInfo(bookInfo) {
     let author = ""
     if (book.volumeInfo.authors != undefined) {
       author = book.volumeInfo.authors
-    }else  author = "N/A"
+    } else  author = "N/A"
 
     //publication date and publisher
     let date = book.volumeInfo.publishedDate
@@ -79,7 +79,7 @@ function bookInfo(bookInfo) {
             && book.volumeInfo.industryIdentifiers[1].identifier != undefined) {
         isbn = book.volumeInfo.industryIdentifiers[0].identifier
       }
-    }else {
+    } else {
       isbn = "N/A";
     }
 
