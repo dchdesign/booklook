@@ -72,10 +72,11 @@ function bookInfo(bookInfo) {
     //isbn
     let isbn = ''
     if (book.volumeInfo.industryIdentifiers != undefined) {
-      if (book.volumeInfo.industryIdentifiers[1] == undefined) {
+           if (book.volumeInfo.industryIdentifiers[1] == undefined) {
         isbn = book.volumeInfo.industryIdentifiers[0].identifier
       }
-      else if (book.volumeInfo.industryIdentifiers[0].identifier != undefined && book.volumeInfo.industryIdentifiers[1].identifier != undefined) {
+      else if (book.volumeInfo.industryIdentifiers[0].identifier != undefined 
+            && book.volumeInfo.industryIdentifiers[1].identifier != undefined) {
         isbn = book.volumeInfo.industryIdentifiers[0].identifier
       }
     }else {
