@@ -99,15 +99,21 @@ function bookInfo(bookInfo) {
       currencyCode = 'N/A'
     }
 
+    //description
+    let plot = ""
+      if (book.volumeInfo.description != undefined) {
+        plot = book.volumeInfo.description
+      } else plot = 'N/A'
+
 //format info
-formatBookInfo(image, title, author, publisher, date, isbn, preview, price, currency, buyLink)
-  addBookDisplayListeners()
+formatBookInfo(image, title, author, publisher, date, isbn, preview, price, currency, buyLink, plot)
+addDescModalListeners()
   });
 }
 
 
 //send info
-function formatBookInfo(image, title, author, publisher, date, isbn, preview, price, currency, buylink) {
+function formatBookInfo(image, title, author, publisher, date, isbn, preview, price, currency, buylink, plot) {
   let resultsDiv = document.querySelector("#results")
  
   //new div for each book
@@ -127,6 +133,12 @@ function formatBookInfo(image, title, author, publisher, date, isbn, preview, pr
       <p><b>ISBN:</b> ${isbn}</p>
       <p><b>Sample:</b> <a href="${preview}" target="_blank">Google Books Preview</a></p>
       <p><b>Buy eBook:</b><a href ="${buylink}" target="_blank">${price} ${currency}</a></p>
+      <button class="descbutton">DESCRIPTION</button> </div>
+      <div class='descmodal desccontainer'>
+      <div class='desccontent'>
+      <span class="close">&times;</span>
+      <p><b>Description:</b> ${plot}</p>
+      </div>
     </div>
     </div>`
   
@@ -138,20 +150,30 @@ function formatBookInfo(image, title, author, publisher, date, isbn, preview, pr
 }
 
 
-//book display listeners 
-function addBookDisplayListeners() {
-  let bookDisplayView = document.querySelectorAll('.bookdisplay')
-  let bookDisplayButton = document.querySelectorAll('.bookdisplaybutton')
+//add description modal listeners 
+function addDescModalListeners() {
 
-  //multiple book display 
-  let bookDisplayArray = Array.from(bookDisplayButton).entries()
-  for (let [button] of bookDisplayArray) {
+  //add event listener for description
+  let descmodal = document.querySelectorAll('.descmodal')
+  let closemodal = document.querySelectorAll('.close')
+  let descbutton = document.querySelectorAll('.descbutton')
+
+  //make multiple modals work
+  let descmodalArray = Array.from(descbutton).entries()
+  for (let [desc, button] of descmodalArray) {
     function show() {
-      bookDisplayView.forEach(book => book.style.display = "none") 
+      //closes all 
+      descmodal.forEach(modal => modal.style.display = "none") 
+      descmodal[desc].style.display = "block"
+    }
+    function hide() {
+      descmodal[desc].style.display = "none"
     }
     button.addEventListener("click", show)
+    closemodal[desc].addEventListener("click", hide)
   }
 }
+
 
 
   //event listener for button
