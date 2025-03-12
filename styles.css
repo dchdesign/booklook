@@ -1,1 +1,7 @@
-//will style later
+body{
+    font-family: 'Baskerville'
+  }
+
+.descmodal{
+    display: none;
+  }
