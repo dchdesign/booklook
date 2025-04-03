@@ -1,7 +1,143 @@
-body{
-    font-family: 'Baskerville'
+ /*-- Reset Rule --*/
+ * {
+   border: 0;
+   margin: 0;
+   padding: 0;
   }
 
-.descmodal{
+ article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+   display:block;
+  }
+
+ body{
+    font-family: 'Baskerville';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo{
+    max-width: 200px;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  input[type=text], #search-text{
+    border: 2px solid #666666;
+    width:  130px;
+    height: 27px;
+    font-family: 'Baskerville';
+    padding-left: 5px;
+  }
+
+  #options{
+    border: 2px solid #666666;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Baskerville';
+  }
+
+  .button{
+    width: 130px;
+    height: 30px;
+    background-color: #99cccc;
+    border:2px solid #F89938;
+    color: #666666;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Baskerville';
+  }
+
+  .button:hover{
+    background-color: #f89938;
+  }
+  
+  .bookshelf{
+    max-width: 100%;
+    height: auto;
+  }
+    
+  #results {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+  }
+
+  .book {
+    padding: 20px;
+    text-align: center;
+    max-width: 333px;  
+  }
+
+  .info {
+    max-width: 333px;
+    color: #666666;
+  }
+
+  p {
+    padding: 4px;
+  }
+
+  .buylink {
+    color: #F89938 ;
+    padding-left: 4px;
+    font-weight: 800;
+  }
+
+  .descmodal{
     display: none;
+    position: relative;
+    z-index: 1; 
+    margin: -5% auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .desccontent{
+    background-color: #99cccc;
+    color: black;
+    border: 2px solid #F89938;
+    padding: 0px 20px;
+    overflow: auto;
+    width: 300px;
+    height: 250px;
+    font-family: 'Baskerville';
+    text-align: left;
+  }
+    
+  .close:hover, .close:focus{
+    color: #f89938;
+    cursor: pointer;
+  }
+    
+  .close{
+    font-size: xx-large;
+  }
+
+  .descbutton{
+    width: 150px;
+    height: 30px;
+    background-color: #99cccc;
+    border:2px solid #F89938;
+    color: #666666;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Baskerville';
+  }
+   
+  .descbutton:hover{
+    background-color: #f89938;
+  }
+
+  .googlelogo{
+    padding-top: 5px;
   }
