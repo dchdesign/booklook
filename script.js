@@ -131,7 +131,7 @@ function formatBookInfo(image, title, author, publisher, date, isbn, preview, pr
       <p><b>Publisher:</b> ${publisher}</p>
       <p><b>Publication Date:</b> ${date}</p>
       <p><b>ISBN:</b> ${isbn}</p>
-      <p><b>Sample:</b> <a href="${preview}" target="_blank">Google Books Preview</a></p>
+      <p><a href="${preview}" target="_blank"><img src="images/googlepreviewbutton.png"></a></p>
       <p><b>Buy eBook:</b><a href ="${buylink}" target="_blank">${price} ${currency}</a></p>
       <button class="descbutton">DESCRIPTION</button> </div>
       <div class='descmodal'>
