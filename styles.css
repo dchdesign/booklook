@@ -9,14 +9,14 @@
    display:block;
   }
 
- body{
+ body {
     font-family: 'Baskerville';
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .logo{
+  .logo {
     max-width: 200px;
     align-items: center;
     padding-top: 20px;
@@ -27,7 +27,7 @@
     padding-bottom: 20px;
   }
 
-  input[type=text], #search-text{
+  input[type=text], #search-text {
     border: 2px solid #666666;
     width:  130px;
     height: 27px;
@@ -35,7 +35,7 @@
     padding-left: 5px;
   }
 
-  #options{
+  #options {
     border: 2px solid #666666;
     width: 80px;
     height: 30px;
@@ -43,7 +43,7 @@
     font-family: 'Baskerville';
   }
 
-  .button{
+  .button {
     width: 130px;
     height: 30px;
     background-color: #99cccc;
@@ -54,11 +54,11 @@
     font-family: 'Baskerville';
   }
 
-  .button:hover{
+  .button:hover {
     background-color: #f89938;
   }
   
-  .bookshelf{
+  .bookshelf {
     max-width: 100%;
     height: auto;
   }
@@ -92,7 +92,7 @@
     font-weight: 800;
   }
 
-  .descmodal{
+  .descmodal {
     display: none;
     position: relative;
     z-index: 1; 
@@ -102,7 +102,7 @@
     transform: translate(-50%, -50%);
   }
   
-  .desccontent{
+  .desccontent {
     background-color: #99cccc;
     color: black;
     border: 2px solid #F89938;
@@ -114,16 +114,16 @@
     text-align: left;
   }
     
-  .close:hover, .close:focus{
+  .close:hover, .close:focus {
     color: #f89938;
     cursor: pointer;
   }
     
-  .close{
+  .close {
     font-size: xx-large;
   }
 
-  .descbutton{
+  .descbutton {
     width: 150px;
     height: 30px;
     background-color: #99cccc;
@@ -134,10 +134,10 @@
     font-family: 'Baskerville';
   }
    
-  .descbutton:hover{
+  .descbutton:hover {
     background-color: #f89938;
   }
 
-  .googlelogo{
+  .googlelogo {
     padding-top: 5px;
   }
