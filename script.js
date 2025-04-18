@@ -125,23 +125,25 @@ function formatBookInfo(image, title, author, publisher, date, isbn, preview, pr
   //info display  
   let bookInfo =
   `<div class="info">
-      <img src= "${image}"id="bkcover"></img>
-      <h2>${title}</h2>
-      <h3>${author}</h3>
+      <img src= "${image}"id="bkcover" alt="image of book cover"></img>
+      <h3>${title}</h3>
+      <h4>${author}</h4>
       <p><b>Publisher:</b> ${publisher}</p>
       <p><b>Publication Date:</b> ${date}</p>
       <p><b>ISBN:</b> ${isbn}</p>
-      <p><a href="${preview}" target="_blank"><img src="images/googlepreviewbutton.png"></a></p>
-      <p><b>Buy eBook:</b><a href ="${buylink}" target="_blank">${price} ${currency}</a></p>
+      <p><a href="${preview}" target="_blank"><img src="images/googlepreviewbutton.png" alt="image of Google Books Preview logo"></a></p>
+      <p><b>Buy eBook:</b><a href ="${buylink}" target="_blank" class="buylink">${price} ${currency}</a></p>
+      <div class='descbutton-container'>
       <button class="descbutton">DESCRIPTION</button> </div>
       <div class='descmodal'>
       <div class='desccontent'>
       <span class="close">&times;</span>
       <p><b>Description:</b> ${plot}</p>
       </div>
-    </div>
+      </div>
+      </div>
     </div>`
-  
+
   //send info display to DOM
   bookDiv.insertAdjacentHTML('beforeend', bookInfo)
 
@@ -175,7 +177,6 @@ function addDescModalListeners() {
 }
 
 
-
   //event listener for button
   let form = document.querySelector('form')
   form.addEventListener('submit', (button) => {
@@ -187,7 +188,7 @@ function addDescModalListeners() {
   let searchText = document.querySelector('#search-text').value
 
   //drop down menu options
-  let searchOptions = document.getElementById('options') 
+  let searchOptions = document.getElementById('search-options') 
 
   //remove results from previous search
   removeResults(resultsContainer)
@@ -209,5 +210,3 @@ function removeResults(element) {
     element.removeChild(element.lastChild)
   }
 }
-
-
