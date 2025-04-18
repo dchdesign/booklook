@@ -9,77 +9,112 @@
    display:block;
   }
 
- body {
+ body{
     font-family: 'Baskerville';
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .logo {
+  .logo{
     max-width: 200px;
     align-items: center;
     padding-top: 20px;
   }
 
   form {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
   }
 
-  input[type=text], #search-text {
-    border: 2px solid #666666;
-    width:  130px;
-    height: 27px;
-    font-family: 'Baskerville';
+  input[type=text], #search-text{
+    border: 2px solid #000000;
+    width:  190px;
+    height: 37px;
+    font-family: #000000 'Baskerville';
+    font-size: medium;
     padding-left: 5px;
   }
 
-  #options {
-    border: 2px solid #666666;
-    width: 80px;
-    height: 30px;
+  .text-container{
     text-align: center;
-    font-family: 'Baskerville';
   }
 
-  .button {
-    width: 130px;
-    height: 30px;
+  .text-label{
+    font-family: #000000 'Baskerville';
+    font-size:medium;
+  }
+
+  #search-options{
+    border: 2px solid #000000;
+    width: 90px;
+    height: 43px;
+    text-align: center;
+    font-family: #000000 'Baskerville';
+    font-size: medium;
+  }
+
+  .option-container{
+    padding-top: 8px;
+    text-align: center;
+  }
+
+  .button{
+    width: 200px;
+    height: 40px;
     background-color: #99cccc;
-    border:2px solid #F89938;
-    color: #666666;
+    border:4px solid #F89938;
+    color: #000000;
     font-weight: 600;
     text-align: center;
     font-family: 'Baskerville';
+    font-size: large;
   }
 
-  .button:hover {
+  .button-container{
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .button:hover{
     background-color: #f89938;
   }
   
-  .bookshelf {
+  .bookshelf{
     max-width: 100%;
     height: auto;
+    padding-top: 15px;
   }
     
   #results {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow:wrap;
+    justify-content:center;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1100px;
   }
 
   .book {
     padding: 20px;
-    text-align: center;
-    max-width: 333px;  
+    width: 300px;  
+    height: 500px;
   }
 
   .info {
-    max-width: 333px;
-    color: #666666;
+    max-width: 300px;
+    color: #000000;
+    font-weight: 600;
+    background-color: #dddddd;
+    height: 500px;
+    padding: 5px;
+    padding-left: 4%;
+    padding-top: 3%;
+    border: 2px solid #000000;
+    text-align: left;
+  }
+
+  #bkcover {
+    padding-left: 70px;
   }
 
   p {
@@ -87,57 +122,63 @@
   }
 
   .buylink {
-    color: #F89938 ;
+    border: 2px solid #F89938 ;
+    background-color: #99cccc;
+    color: #000000;
     padding-left: 4px;
     font-weight: 800;
+    padding: 2px;
   }
 
-  .descmodal {
+  .descbutton-container {
+    padding-top: 25px;
+    padding-left: 68px;
+
+  }
+
+  .descmodal{
     display: none;
     position: relative;
-    z-index: 1; 
-    margin: -5% auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 1;
+    transform: translate(-12.5%, -120%);
   }
   
-  .desccontent {
+  .desccontent{
     background-color: #99cccc;
     color: black;
     border: 2px solid #F89938;
     padding: 0px 20px;
     overflow: auto;
     width: 300px;
-    height: 250px;
+    height: 300px;
     font-family: 'Baskerville';
     text-align: left;
   }
     
-  .close:hover, .close:focus {
+  .close:hover, .close:focus{
     color: #f89938;
     cursor: pointer;
   }
     
-  .close {
+  .close{
     font-size: xx-large;
   }
 
-  .descbutton {
-    width: 150px;
+  .descbutton{
+    width: 130px;
     height: 30px;
     background-color: #99cccc;
     border:2px solid #F89938;
-    color: #666666;
-    font-weight: 800;
+    color: #000000;
+    font-weight: 600;
     text-align: center;
     font-family: 'Baskerville';
   }
    
-  .descbutton:hover {
+  .descbutton:hover{
     background-color: #f89938;
   }
 
-  .googlelogo {
+  .googlelogo{
     padding-top: 5px;
   }
