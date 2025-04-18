@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,7 @@
 
   <header>
     <div class="logo-container">
-     <a href="./index.html"><img src="images/booklooklogo.png" alt="BookLook" class="logo" title="BookLook logo"></a>
+     <a href="./index.html"><img src="images/booklooklogo.png" alt="image of BookLook logo" class="logo" title="BookLook"></a>
     </div>
   </header>
 
@@ -27,19 +27,24 @@
 
       <form class="form">
 
-        <label for="search-text">
-          <input type="text" name="search-text" id="search-text" placeholder="TYPE HERE">
-        </label>
-
-        <label for="search-options">
-          <select id="options">
-            <option value="title">TITLE</option>
-            <option value="author">AUTHOR</option>
+        <div class="text-container">
+        <label for="search-text" class="text-label">Type in Title, Author, or ISBN:</label><br>
+          <input type="text" name="search-text" id="search-text">
+        </div>
+        
+        <div class="option-container">
+        <label for="search-options">Pick search option:</label><br>
+          <select id="search-options">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
             <option value="isbn">ISBN</option>
           </select>
-        </label>
-
-        <button type="submit" id="submitSearch" class="button">LOOK FOR BOOK</button>
+        </div>
+        
+        
+        <div class="button-container">
+        <button type="submit" id="submitSearch" class="button">Look for Book</button>
+        </div>
 
       </form>
 
@@ -49,13 +54,13 @@
     
   </section>
 
-    <div class="bookshelf-comtainer">
-      <img src="images/booklookbookshelf.jpg" alt="BookLook Bookshelf" class="bookshelf" title="Bookshelf image">
-    </div>
+  <div class="bookshelf-comtainer">
+    <img src="images/booklookbookshelf.jpg" alt="drawing of a bookshelf" class="bookshelf" title="Bookshelf image">
+  </div>
 
-    <div class="googlelogo-container">
-      <a href="https://www.google.com/"><img src="images/poweredbygoogle.png" alt="Google Logo" class="googlelogo"></a>
-    </div>
+  <div class="googlelogo-container">
+    <a href="https://www.google.com/"><img src="images/poweredbygoogle.png" alt="Google Logo" class="googlelogo"></a>
+  </div>
 
 </body>
 
