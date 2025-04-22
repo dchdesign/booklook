@@ -21,3 +21,7 @@ MVP CORE FEATURES LIST:
 MVP “nice-to-have” FEATURES LIST:
 -	Access more information about the book in the application – instead of just getting forwarded to Google Books via a hyperlink. 
 -	Access a digital copy of the book in the application – instead of just getting forwarded to Google Books via a hyperlink.
+
+Link to live site: http://www.danielharvey.com/booklook/
+
+To contribute, please send a message with contribution suggestions. 
