@@ -194,10 +194,10 @@ function addDescModalListeners() {
   removeResults(resultsContainer)
 
   //if statement for search options
-  if (searchOptions.options[searchOptions.selectedIndex].text == "author") {
+  if (searchOptions.options[searchOptions.selectedIndex].text == "Author") {
        getBookInfoByAuthor(searchText)
   }
-  else if (searchOptions.options[searchOptions.selectedIndex].text == "isbn") {
+  else if (searchOptions.options[searchOptions.selectedIndex].text == "ISBN") {
        getBookInfoByISBN(searchText)
   }
   else getBookInfoByTitle(searchText)
